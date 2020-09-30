@@ -1,5 +1,7 @@
 'use strict';
 
+document.querySelector('.edit-block').outerHTML = localStorage['lastEdit'];
+
 (function(){
   let btnSave = document.querySelector('.save');
   let btnNosave = document.querySelector('.nosave');
