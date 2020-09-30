@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Тема 10</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="/JS/textEditor.js" defer></script>
+  </head>
+  <body>
+    <h1 class="title_h1">Web API</h1>
+    <div class="container" contenteditable="false">
+      <div class='edit-block'>
+        <h2 class="title_h2">Текст для редактирования.</h2>
+        <p class="paragraf_1">
+          Свойство <strong>localStorage</strong> позволяет получить доступ к
+          <strong>Storage</strong> объекту.
+          <strong>localStorage</strong> аналогично свойству sessionStorage.
+          Разница только в том, что свойство sessionStorage хранит данные в
+          течение сеанса (до закрытия браузера), в отличие от данных,
+          находящихся в свойстве <strong>localStorage</strong>, которые не имеют
+          ограничений по времени хранения и могут быть удалены <u>только</u> с
+          помощью <em><strong>JavaScript</strong></em
+          >.
+        </p>
+        <p class="paragraf_2">
+          Следует отметить, что данные, сохраннённые как в
+          <strong>localStorage</strong>, так и в
+          <strong>sessionStorage</strong>, являтся специфичными для протокола
+          страницы.
+        </p>
+        <p class="paragraf_3">
+          Ключи и значения всегда строки (так же, как и объекты, целочисленные
+          ключи автоматически будут преобразованы в строки).
+        </p>
+      </div>
+    </div>
+    <div class="btn_container">
+      <div class="btn_save_or_nosave">
+        <button disabled class="btn save">Сохранить</button>
+        <button disabled class="btn nosave">Отмена</button>
+      </div>
+      <button class="btn edit active">Редактировать</button>
+    </div>
+  </body>
+</html>

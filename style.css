@@ -1,0 +1,36 @@
+body {
+  margin: 30px;
+}
+
+h1, h2 {
+  text-align: center;
+}
+
+.container {
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.btn_container{
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+}
+
+.btn_save_or_nosave {
+  display: flex;
+  padding-bottom: 3px;
+}
+
+.btn{
+  flex-grow: 1;
+  margin-right: 3px;
+  color: #777;
+}
+
+.active {
+  background-color: rgb(72, 207, 173);
+  color: #000;
+}
