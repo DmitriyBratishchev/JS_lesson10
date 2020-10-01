@@ -1,10 +1,14 @@
 'use strict';
 
-document.querySelector('.edit-block').outerHTML = localStorage['lastEdit'];
-
 (function(){
+
+  if (localStorage['lastEdit']){
+    document.querySelector('.container').innerHTML = localStorage['lastEdit'];
+  };
+
   let btnSave = document.querySelector('.save');
   let btnNosave = document.querySelector('.nosave');
+  
 
   btnSave.addEventListener('click', function(){
     let textEdit = document.querySelector('.container').innerHTML;
@@ -12,7 +16,7 @@ document.querySelector('.edit-block').outerHTML = localStorage['lastEdit'];
   })
 
   btnNosave.addEventListener('click', function(){
-    document.querySelector('.edit-block').outerHTML = localStorage['lastEdit'];
+    document.querySelector('.container').innerHTML = localStorage['lastEdit'];
   }) 
 
   document
