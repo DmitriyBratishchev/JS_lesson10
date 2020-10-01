@@ -4,16 +4,18 @@
 
   if (localStorage['lastEdit']){
     document.querySelector('.container').innerHTML = localStorage['lastEdit'];
-  };
+  } else { save() };
 
   let btnSave = document.querySelector('.save');
   let btnNosave = document.querySelector('.nosave');
   
-
-  btnSave.addEventListener('click', function(){
+  function save(){
     let textEdit = document.querySelector('.container').innerHTML;
     localStorage.setItem('lastEdit', textEdit);
-  })
+  }
+
+  btnSave.addEventListener('click', save );
+  
 
   btnNosave.addEventListener('click', function(){
     document.querySelector('.container').innerHTML = localStorage['lastEdit'];
